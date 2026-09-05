@@ -27,3 +27,19 @@ Ordoでは、文書を成果物ではなく開発プロセスの一部として�
 - [プロダクトビジョン](product/vision.md)
 - [学習ロードマップ](learning/roadmap.md)
 - [最初のADR](decisions/0001-record-decisions-with-adrs.md)
+- [技術選定](decisions/0003-development-platform.md)
+- [開発環境](architecture/development.md)
+
+## ドキュメントサイト
+
+Astro Starlightで既存のMarkdownディレクトリを直接読み込みます。サイト用に文書をコピーする必要はありません。ページには `title` のYAML frontmatterを付けてください。`templates/` とこのREADMEはサイトのページにせず、`index.md` をサイトの入口にします。
+
+```sh
+bun install --frozen-lockfile
+bun run dev
+bun run build
+```
+
+Bun 1.3.11を使用します。mainへのpushでGitHub Actionsがビルドし、[公開サイト](https://udonrm.github.io/Ordo-docs/)にデプロイします。PRではビルドと依存監査だけを実行します。
+
+リポジトリとサイトは一般公開です。顧客データ、秘密鍵、トークン、業務上の秘密を含めないでください。過去のコミットも公開対象です。選定理由はADR 0003を参照してください。
