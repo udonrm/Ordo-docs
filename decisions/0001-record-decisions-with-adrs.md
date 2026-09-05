@@ -1,3 +1,7 @@
+---
+title: 'ADR 0001: ADRで意思決定を記録する'
+---
+
 # ADR 0001: Record significant decisions with ADRs
 
 - Status: Accepted

@@ -1,3 +1,7 @@
+---
+title: 'ADR 0002: 文書を別リポジトリで管理する'
+---
+
 # ADR 0002: Manage durable documentation in a separate repository
 
 - Status: Accepted
